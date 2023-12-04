@@ -139,8 +139,8 @@ class Gui:
             32,
             390,
             f"{self.user_data[1]} 소속 \n\n {self.user_data[0]}님 \n\n 회원가입 되셨습니다. ",
-            "#472f91",
-            ("고도 M", 24),
+            "#000000",
+            ("고도 M bold", 24),
         )
         Data_2 = Get_label.image_label_text(
             self,
@@ -148,8 +148,8 @@ class Gui:
             422,
             390,
             f"{self.list_data[2]} 님 \n\n {self.list_data[0]} \n\n {self.list_data[1]} \n\n 방문하셨습니다.",
-            "#472f91",
-            ("고도 M", 24),
+            "#000000",
+            ("고도 M bold", 24),
         )
 
     def apply_screen(self):
@@ -178,7 +178,7 @@ class Gui:
         )
         self.content_entry = tkinter.Text(self.screen, width=10, height=1)
         self.content_entry.place(x=200, y=570)
-        self.content_entry.config(font=("고도 M", 45))
+        self.content_entry.config(font=("고도 M bold", 45))
         self.content_button = Get_label.image_button(
             self,
             os.path.join(img_path, "../../images/commit.png"),
@@ -248,8 +248,8 @@ class Gui:
             133,
             self.no_action,
             f"",
-            "#472f91",
-            ("고도 M", 12),
+            "#ffffff",
+            ("고도 M", 12, "bold"),
         )
         self.Intro2 = Get_label.image_button_text(
             self,
@@ -259,7 +259,7 @@ class Gui:
             self.sort1,
             f"날짜",
             "#ffffff",
-            ("고도 M", 12),
+            ("고도 M", 12, "bold"),
         )
         self.Intro3 = Get_label.image_button_text(
             self,
@@ -269,7 +269,7 @@ class Gui:
             self.sort2,
             f"시간",
             "#ffffff",
-            ("고도 M", 12),
+            ("고도 M", 12, "bold"),
         )
         self.Intro4 = Get_label.image_button_text(
             self,
@@ -279,7 +279,7 @@ class Gui:
             self.sort3,
             f"이름",
             "#ffffff",
-            ("고도 M", 12),
+            ("고도 M", 12, "bold"),
         )
         self.Intro5 = Get_label.image_button_text(
             self,
@@ -289,7 +289,7 @@ class Gui:
             self.sort4,
             f"소속",
             "#ffffff",
-            ("고도 M", 12),
+            ("고도 M", 12, "bold"),
         )
         if self.sort_color == 1:
             fir = self.change_sortnum()
@@ -316,8 +316,8 @@ class Gui:
                 12,
                 173 + (40 * i),
                 f"{i+1}",
-                "#472f91",
-                ("고도 M", 12),
+                "#000000",
+                ("고도 M", 12, "bold"),
             )
             li2 = Get_label.image_label_text(
                 self,
@@ -325,8 +325,8 @@ class Gui:
                 62,
                 173 + (40 * i),
                 f"{self.list[i][0]}",
-                "#472f91",
-                ("고도 M", 12),
+                "#000000",
+                ("고도 M", 12, "bold"),
             )
             li3 = Get_label.image_label_text(
                 self,
@@ -334,8 +334,8 @@ class Gui:
                 272,
                 173 + (40 * i),
                 f"{self.list[i][1]}",
-                "#472f91",
-                ("고도 M", 12),
+                "#000000",
+                ("고도 M", 12, "bold"),
             )
             li4 = Get_label.image_label_text(
                 self,
@@ -343,8 +343,8 @@ class Gui:
                 482,
                 173 + (40 * i),
                 f"{self.list[i][2]}",
-                "#472f91",
-                ("고도 M", 12),
+                "#000000",
+                ("고도 M", 12, "bold"),
             )
             li5 = Get_label.image_label_text(
                 self,
@@ -352,8 +352,8 @@ class Gui:
                 612,
                 173 + (40 * i),
                 f"{self.list[i][3]}",
-                "#472f91",
-                ("고도 M", 12),
+                "#000000",
+                ("고도 M", 12, "bold"),
             )
 
     def list_screen2(self):
@@ -391,7 +391,7 @@ class Gui:
             self.no_action,
             f"",
             "#472f91",
-            ("고도 M", 12),
+            ("고도 M", 12, "bold"),
         )
         self.Intro2 = Get_label.image_button_text(
             self,
@@ -401,7 +401,7 @@ class Gui:
             self.sort1,
             f"날짜",
             "#472f91",
-            ("고도 M", 12),
+            ("고도 M", 12, "bold"),
         )
         self.Intro3 = Get_label.image_button_text(
             self,
@@ -411,7 +411,7 @@ class Gui:
             self.sort2,
             f"시간",
             "#472f91",
-            ("고도 M", 12),
+            ("고도 M", 12, "bold"),
         )
         self.Intro4 = Get_label.image_button_text(
             self,
@@ -421,7 +421,7 @@ class Gui:
             self.sort3,
             f"이름",
             "#472f91",
-            ("고도 M", 12),
+            ("고도 M", 12, "bold"),
         )
         self.Intro5 = Get_label.image_button_text(
             self,
@@ -431,7 +431,7 @@ class Gui:
             self.sort4,
             f"소속",
             "#472f91",
-            ("고도 M", 12),
+            ("고도 M", 12, "bold"),
         )
         if self.sort_color == 1:
             fir = self.change_sortnum()
@@ -459,7 +459,7 @@ class Gui:
                 173 + (40 * i),
                 f"{i+16}",
                 "#472f91",
-                ("고도 M", 12),
+                ("고도 M", 12, "bold"),
             )
             li2 = Get_label.image_label_text(
                 self,
@@ -468,7 +468,7 @@ class Gui:
                 173 + (40 * i),
                 f"{self.list[i+15][0]}",
                 "#472f91",
-                ("고도 M", 12),
+                ("고도 M", 12, "bold"),
             )
             li3 = Get_label.image_label_text(
                 self,
@@ -477,7 +477,7 @@ class Gui:
                 173 + (40 * i),
                 f"{self.list[i+15][1]}",
                 "#472f91",
-                ("고도 M", 12),
+                ("고도 M", 12, "bold"),
             )
             li4 = Get_label.image_label_text(
                 self,
@@ -486,7 +486,7 @@ class Gui:
                 173 + (40 * i),
                 f"{self.list[i+15][2]}",
                 "#472f91",
-                ("고도 M", 12),
+                ("고도 M", 12, "bold"),
             )
             li5 = Get_label.image_label_text(
                 self,
@@ -495,7 +495,7 @@ class Gui:
                 173 + (40 * i),
                 f"{self.list[i+15][3]}",
                 "#472f91",
-                ("고도 M", 12),
+                ("고도 M", 12, "bold"),
             )
 
     def list_screen3(self):
@@ -533,7 +533,7 @@ class Gui:
             self.no_action,
             f"",
             "#472f91",
-            ("고도 M", 12),
+            ("고도 M", 12, "bold"),
         )
         self.Intro2 = Get_label.image_button_text(
             self,
@@ -543,7 +543,7 @@ class Gui:
             self.sort1,
             f"날짜",
             "#472f91",
-            ("고도 M", 12),
+            ("고도 M", 12, "bold"),
         )
         self.Intro3 = Get_label.image_button_text(
             self,
@@ -553,7 +553,7 @@ class Gui:
             self.sort2,
             f"시간",
             "#472f91",
-            ("고도 M", 12),
+            ("고도 M", 12, "bold"),
         )
         self.Intro4 = Get_label.image_button_text(
             self,
@@ -563,7 +563,7 @@ class Gui:
             self.sort3,
             f"이름",
             "#472f91",
-            ("고도 M", 12),
+            ("고도 M", 12, "bold"),
         )
         self.Intro5 = Get_label.image_button_text(
             self,
@@ -573,7 +573,7 @@ class Gui:
             self.sort4,
             f"소속",
             "#472f91",
-            ("고도 M", 12),
+            ("고도 M", 12, "bold"),
         )
         if self.sort_color == 1:
             fir = self.change_sortnum()
@@ -601,7 +601,7 @@ class Gui:
                 173 + (40 * i),
                 f"{i+31}",
                 "#472f91",
-                ("고도 M", 12),
+                ("고도 M", 12, "bold"),
             )
             li2 = Get_label.image_label_text(
                 self,
@@ -610,7 +610,7 @@ class Gui:
                 173 + (40 * i),
                 f"{self.list[i+30][0]}",
                 "#472f91",
-                ("고도 M", 12),
+                ("고도 M", 12, "bold"),
             )
             li3 = Get_label.image_label_text(
                 self,
@@ -619,7 +619,7 @@ class Gui:
                 173 + (40 * i),
                 f"{self.list[i+30][1]}",
                 "#472f91",
-                ("고도 M", 12),
+                ("고도 M", 12, "bold"),
             )
             li4 = Get_label.image_label_text(
                 self,
@@ -628,7 +628,7 @@ class Gui:
                 173 + (40 * i),
                 f"{self.list[i+30][2]}",
                 "#472f91",
-                ("고도 M", 12),
+                ("고도 M", 12, "bold"),
             )
             li5 = Get_label.image_label_text(
                 self,
@@ -637,7 +637,7 @@ class Gui:
                 173 + (40 * i),
                 f"{self.list[i+30][3]}",
                 "#472f91",
-                ("고도 M", 12),
+                ("고도 M", 12, "bold"),
             )
 
     def sort1(self):
@@ -676,11 +676,11 @@ class Gui:
             self.sort_num = 1
         else:
             self.sort_num = 0
-        self.Intro1.config(fg="#472f91")
-        self.Intro2.config(fg="#472f91")
-        self.Intro3.config(fg="#472f91")
-        self.Intro4.config(fg="#472f91")
-        self.Intro5.config(fg="#472f91")
+        self.Intro1.config(fg="#ffffff")
+        self.Intro2.config(fg="#ffffff")
+        self.Intro3.config(fg="#ffffff")
+        self.Intro4.config(fg="#ffffff")
+        self.Intro5.config(fg="#ffffff")
 
 
 if __name__ == "__main__":
