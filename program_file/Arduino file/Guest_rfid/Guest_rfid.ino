@@ -1,13 +1,12 @@
 #include <SPI.h>
 #include <MFRC522.h>
 
- 
 #define SS_PIN 10
 #define RST_PIN 9
 MFRC522 mfrc522(SS_PIN, RST_PIN);   // Create MFRC522 instance.
-int Red = 3;
-int Green = 4;
-int buzzer = 8; 
+int Red = 8;
+int Green = 7;
+//int buzzer = 6; 
 
 void setup() 
 {
@@ -34,7 +33,7 @@ void loop()
   }
   digitalWrite(Red, LOW);
   digitalWrite(Green,HIGH);
-  tone(buzzer,500,500);
+  //tone(buzzer,500,500);
   String content= "";
   byte letter;
   for (byte i = 0; i < mfrc522.uid.size; i++) 

@@ -14,8 +14,9 @@ from db import *
 import pyglet
 from tkinter.simpledialog import askstring
 
-img_path = os.path.join(os.getcwd())
 
+img_path = os.path.join(os.getcwd())
+base_path = os.path.dirname(os.path.realpath(__file__))
 class Gui:
     def __init__(self):
         self.screen_num = 0
@@ -141,6 +142,7 @@ class Gui:
             f"{self.user_data[1]} 소속 \n\n {self.user_data[0]}님 \n\n 회원가입 되셨습니다. ",
             "#000000",
             ("고도 M bold", 24),
+
         )
         Data_2 = Get_label.image_label_text(
             self,
@@ -316,7 +318,7 @@ class Gui:
                 12,
                 173 + (40 * i),
                 f"{i+1}",
-                "#000000",
+                "#ffffff",
                 ("고도 M", 12, "bold"),
             )
             li2 = Get_label.image_label_text(
@@ -325,7 +327,7 @@ class Gui:
                 62,
                 173 + (40 * i),
                 f"{self.list[i][0]}",
-                "#000000",
+                "#ffffff",
                 ("고도 M", 12, "bold"),
             )
             li3 = Get_label.image_label_text(
@@ -334,7 +336,7 @@ class Gui:
                 272,
                 173 + (40 * i),
                 f"{self.list[i][1]}",
-                "#000000",
+                "#ffffff",
                 ("고도 M", 12, "bold"),
             )
             li4 = Get_label.image_label_text(
@@ -343,7 +345,7 @@ class Gui:
                 482,
                 173 + (40 * i),
                 f"{self.list[i][2]}",
-                "#000000",
+                "#ffffff",
                 ("고도 M", 12, "bold"),
             )
             li5 = Get_label.image_label_text(
@@ -352,7 +354,7 @@ class Gui:
                 612,
                 173 + (40 * i),
                 f"{self.list[i][3]}",
-                "#000000",
+                "#ffffff",
                 ("고도 M", 12, "bold"),
             )
 
@@ -390,7 +392,7 @@ class Gui:
             133,
             self.no_action,
             f"",
-            "#472f91",
+            "#ffffff",
             ("고도 M", 12, "bold"),
         )
         self.Intro2 = Get_label.image_button_text(
@@ -400,7 +402,7 @@ class Gui:
             133,
             self.sort1,
             f"날짜",
-            "#472f91",
+            "#ffffff",
             ("고도 M", 12, "bold"),
         )
         self.Intro3 = Get_label.image_button_text(
@@ -410,7 +412,7 @@ class Gui:
             133,
             self.sort2,
             f"시간",
-            "#472f91",
+            "#ffffff",
             ("고도 M", 12, "bold"),
         )
         self.Intro4 = Get_label.image_button_text(
@@ -420,7 +422,7 @@ class Gui:
             133,
             self.sort3,
             f"이름",
-            "#472f91",
+            "#ffffff",
             ("고도 M", 12, "bold"),
         )
         self.Intro5 = Get_label.image_button_text(
@@ -430,7 +432,7 @@ class Gui:
             133,
             self.sort4,
             f"소속",
-            "#472f91",
+            "#ffffff",
             ("고도 M", 12, "bold"),
         )
         if self.sort_color == 1:
@@ -458,7 +460,7 @@ class Gui:
                 12,
                 173 + (40 * i),
                 f"{i+16}",
-                "#472f91",
+                "#ffffff",
                 ("고도 M", 12, "bold"),
             )
             li2 = Get_label.image_label_text(
@@ -467,7 +469,7 @@ class Gui:
                 62,
                 173 + (40 * i),
                 f"{self.list[i+15][0]}",
-                "#472f91",
+                "#ffffff",
                 ("고도 M", 12, "bold"),
             )
             li3 = Get_label.image_label_text(
@@ -476,7 +478,7 @@ class Gui:
                 272,
                 173 + (40 * i),
                 f"{self.list[i+15][1]}",
-                "#472f91",
+                "#ffffff",
                 ("고도 M", 12, "bold"),
             )
             li4 = Get_label.image_label_text(
@@ -485,7 +487,7 @@ class Gui:
                 482,
                 173 + (40 * i),
                 f"{self.list[i+15][2]}",
-                "#472f91",
+                "#ffffff",
                 ("고도 M", 12, "bold"),
             )
             li5 = Get_label.image_label_text(
@@ -494,7 +496,7 @@ class Gui:
                 612,
                 173 + (40 * i),
                 f"{self.list[i+15][3]}",
-                "#472f91",
+                "#ffffff",
                 ("고도 M", 12, "bold"),
             )
 
@@ -532,7 +534,7 @@ class Gui:
             133,
             self.no_action,
             f"",
-            "#472f91",
+            "#ffffff",
             ("고도 M", 12, "bold"),
         )
         self.Intro2 = Get_label.image_button_text(
@@ -542,7 +544,7 @@ class Gui:
             133,
             self.sort1,
             f"날짜",
-            "#472f91",
+            "#ffffff",
             ("고도 M", 12, "bold"),
         )
         self.Intro3 = Get_label.image_button_text(
@@ -552,7 +554,7 @@ class Gui:
             133,
             self.sort2,
             f"시간",
-            "#472f91",
+            "#ffffff",
             ("고도 M", 12, "bold"),
         )
         self.Intro4 = Get_label.image_button_text(
@@ -562,7 +564,7 @@ class Gui:
             133,
             self.sort3,
             f"이름",
-            "#472f91",
+            "#ffffff",
             ("고도 M", 12, "bold"),
         )
         self.Intro5 = Get_label.image_button_text(
@@ -572,7 +574,7 @@ class Gui:
             133,
             self.sort4,
             f"소속",
-            "#472f91",
+            "#ffffff",
             ("고도 M", 12, "bold"),
         )
         if self.sort_color == 1:
@@ -600,7 +602,7 @@ class Gui:
                 12,
                 173 + (40 * i),
                 f"{i+31}",
-                "#472f91",
+                "#ffffff",
                 ("고도 M", 12, "bold"),
             )
             li2 = Get_label.image_label_text(
@@ -609,7 +611,7 @@ class Gui:
                 62,
                 173 + (40 * i),
                 f"{self.list[i+30][0]}",
-                "#472f91",
+                "#ffffff",
                 ("고도 M", 12, "bold"),
             )
             li3 = Get_label.image_label_text(
@@ -618,7 +620,7 @@ class Gui:
                 272,
                 173 + (40 * i),
                 f"{self.list[i+30][1]}",
-                "#472f91",
+                "#ffffff",
                 ("고도 M", 12, "bold"),
             )
             li4 = Get_label.image_label_text(
@@ -627,7 +629,7 @@ class Gui:
                 482,
                 173 + (40 * i),
                 f"{self.list[i+30][2]}",
-                "#472f91",
+                "#ffffff",
                 ("고도 M", 12, "bold"),
             )
             li5 = Get_label.image_label_text(
@@ -636,7 +638,7 @@ class Gui:
                 612,
                 173 + (40 * i),
                 f"{self.list[i+30][3]}",
-                "#472f91",
+                "#ffffff",
                 ("고도 M", 12, "bold"),
             )
 
