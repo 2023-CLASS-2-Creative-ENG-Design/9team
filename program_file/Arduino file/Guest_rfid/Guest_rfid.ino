@@ -6,7 +6,7 @@
 MFRC522 mfrc522(SS_PIN, RST_PIN);   // Create MFRC522 instance.
 int Red = 8;
 int Green = 7;
-//int buzzer = 6; 
+int buzzer = 6; 
 
 void setup() 
 {
@@ -33,7 +33,7 @@ void loop()
   }
   digitalWrite(Red, LOW);
   digitalWrite(Green,HIGH);
-  //tone(buzzer,500,500);
+  // tone(buzzer,500,500);
   String content= "";
   byte letter;
   for (byte i = 0; i < mfrc522.uid.size; i++) 
