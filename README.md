@@ -52,5 +52,8 @@ GUI 프로그램을 실행하면, COM 포트 번호를 입력받는 창이 나�
      프로젝트 강의 특성상 다른 학생들의 프로젝트의 진행을 확인할 수 있었는데 이는 현재 자신의 위치를 확인할 수 있었는데 큰 도움이 되었습니다.
 ***
 ## 실행사진
-![메인화면](https://github.com/2023-CLASS-2-Creative-ENG-Design/9team/assets/96522559/0926022c-a011-44ac-98c8-ea9a196efe07)
+<img src="[/uploads/1848994ad25765da30fa8ef3684c67bc/캡처.PNG](https://github.com/2023-CLASS-2-Creative-ENG-Design/9team/assets/96522559/0926022c-a011-44ac-98c8-ea9a196efe07)"  width="700" height="370">
+
+![방명록_2](https://github.com/2023-CLASS-2-Creative-ENG-Design/9team/assets/96522559/335d29d2-4b04-4c5a-9198-23457e8e986f)
+
 
