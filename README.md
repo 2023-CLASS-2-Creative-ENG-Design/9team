@@ -54,6 +54,5 @@ GUI 프로그램을 실행하면, COM 포트 번호를 입력받는 창이 나�
 ## 실행사진
 <img src="/uploads/1848994ad25765da30fa8ef3684c67bc/캡처.PNG](https://github.com/2023-CLASS-2-Creative-ENG-Design/9team/assets/96522559/0926022c-a011-44ac-98c8-ea9a196efe07"  width="700" height="370">
 
-![방명록_2](https://github.com/2023-CLASS-2-Creative-ENG-Design/9team/assets/96522559/335d29d2-4b04-4c5a-9198-23457e8e986f)
-
+<img src="https://github.com/2023-CLASS-2-Creative-ENG-Design/9team/assets/96522559/335d29d2-4b04-4c5a-9198-23457e8e986f" alt="방명록_2" width="300" height="200"/>
 
